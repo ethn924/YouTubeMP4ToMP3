@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.top-container{
+  height: 40vh;
+  background-color: rgb(46, 45, 45);
+}
+
+.bottom-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+#form{
+  width: 600px;
+  height: 40vh;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+#form h1{
+  font-style: italic;
+  text-shadow: 1px 1px darkgray;
+}
+
+#form input{
+  width: 300px;
+  padding: 14px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border: 1px solid lightgray;
+  font-family: inherit;
+  outline: none;
+  box-shadow: 2px 2px 5px gray;
+}
+
+#form button{
+  padding: 14px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: 1px solid lightgray;
+  background-color: whitesmoke;
+  cursor: pointer;
+  font-family: inherit;
+  box-shadow: 2px 3px 5px gray;
+  transition: 0.3s ease-out;
+}
+
+#form button:hover{
+  color:white;
+  background-color:  red;
+  border: 1px solid  red;
+  transform: scale(1.1);
+}
+
+.errors{
+  width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 5px;
+  padding: 12px;
+  color: red;
+  background-color: #ffe6e6;
+  border: 1px solid red;
+}
+
+.success{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  color: black;
+}
+
+#download-btn{
+  width: fit-content;
+  color: black;
+  padding: 12px;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 2px 2px 5px gray;
+  font-style: normal;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-family: inherit;
+  border: 1px solid red;
+  transition: 0.3s ease-out;
+}
+
+#download-btn:hover{
+  color:black;
+  background-color:  white;
+  border: 1px solid  lightgray;
+  transform: scale(1.1);
+}
+
+@media(max-width:768px){
+  .bottom-container{
+    width: 90%;
+    margin: auto;
+  }
+
+  #form, .success{
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media(max-width:480px){
+  #form input{
+    width: 50%;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+/* Positionne le message en bas de la page */
+.info-message {
+  width: 100%;
+  padding: 15px;
+  background: #f8f8f8;
+  border-top: 4px solid #ff0000;
+  font-size: 14px;
+  color: #333;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.example-url {
+  font-style: italic;
+  color: #d32f2f;
+}
+
+/* Positionne le message sous le bouton "Télécharger" */
+.credit-message {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+}
+
+/* Changer la couleur du texte si nécessaire */
+.credit-message p {
+  color: #000000; /* Changer la couleur si tu veux une autre teinte */
+}

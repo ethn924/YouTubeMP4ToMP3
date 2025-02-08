@@ -1,0 +1,4 @@
+cd = change directory = changer de répertoire
+md = créer un répertoire
+dir = Afficher ce qu'il y a dans le répertoire
+copy = copier un fichier existant
